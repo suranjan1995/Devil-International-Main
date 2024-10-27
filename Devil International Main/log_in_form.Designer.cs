@@ -153,7 +153,7 @@
             this.Name = "log_in_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
-            this.Load += new System.EventHandler(this.lgiIf_Load);
+            this.Load += new System.EventHandler(this.log_in_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

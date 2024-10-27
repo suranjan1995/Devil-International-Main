@@ -1,0 +1,12 @@
+Customer ID: 00001
+Sales Rep: 
+Customer Name: Deron koswatta
+Address line 1: 174/D,
+Address line 2: Heeralugedara,
+Address line 3: Walpita.
+Email: derondevildom@gmail.com
+Contact No: 077-0266201
+District: Gampaha
+Town: Negombo
+Location: 7.26578851923334, 80.0500667095184
+------------------------------------------------------------------------------------------

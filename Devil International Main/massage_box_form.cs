@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Devil_International_Main
 {
-    public partial class massage_box_form : Form
+    public partial class massage_box : Form
     {
-        public massage_box_form()
+        public massage_box()
         {
             InitializeComponent();
         }

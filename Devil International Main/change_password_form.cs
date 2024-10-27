@@ -19,21 +19,15 @@ namespace Devil_International_Main
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
         private void chngPwUiNpw_txtbx_TextChanged(object sender, EventArgs e)
         {
-            chngPwUiNpw_txtbx.UseSystemPasswordChar = true;
+            chngPwUiNpw_txtbx.UseSystemPasswordChar = true; // Use password Charactors
 
         }
 
         private void chngPwUiNpwa_txtbx_TextChanged(object sender, EventArgs e)
         {
-            chngPwUiNpwa_txtbx.UseSystemPasswordChar = true;
+            chngPwUiNpwa_txtbx.UseSystemPasswordChar = true; // Use password Charactors
         }
 
         private void lgiIfShwpw_btn_Click(object sender, EventArgs e)
@@ -71,12 +65,13 @@ namespace Devil_International_Main
             string oldPassword = chngPwUiOpw_txtbx.Text;
             string newPassword = chngPwUiNpw_txtbx.Text;
             string confirmPassword = chngPwUiNpwa_txtbx.Text;
-            string filePath = @"D:\Projects of Visual Studio\Devil International MUI\Save Passward\Save Passward.txt"; // Change to your file path
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Save Passward.txt"); 
 
             // Check if new passwords match
             if (newPassword != confirmPassword)
             {
-                error_massage_box_form form1 = new error_massage_box_form();
+                error_massage_box form1 = new error_massage_box();
+                form1.error_massage_label.Text = "New password and confirm password do not match. Please try again.";
                 form1.Show();
                 return;
             }
@@ -106,48 +101,62 @@ namespace Devil_International_Main
             {
                 if (oldPassword != existingPassword)
                 {
-                    change_password_form form2 = new change_password_form();
+                    error_massage_box form2 = new error_massage_box();
+                    form2.error_massage_label.Text = "Exsisting password does not match. Please try again..";
                     form2.Show();
                     return;
                 }
                 else
                 {
-                    // Update the password
-                    for (int i = 0; i < lines.Count; i++)
+                    // Show comformation box
+                    action_form form3 = new action_form();
+                    form3.action_label.Text = "Are you sure you want to update your password?";
+                    var result = form3.ShowDialog(); // Show as a dialog and get result
+
+                    if (result == DialogResult.Yes)
                     {
-                        string[] parts = lines[i].Split(',');
-                        if (parts[0] == userId)
+                        // User clicked Yes, update the password
+                        for (int i = 0; i < lines.Count; i++)
                         {
-                            lines[i] = $"{userId},{newPassword}";
-                            break;
+                            string[] parts = lines[i].Split(',');
+                            if (parts[0] == userId)
+                            {
+                                lines[i] = $"{userId},{newPassword}";
+                                break;
+                            }
                         }
+                        File.WriteAllLines(filePath, lines);
+
+                        massage_box form4 = new massage_box();
+                        form4.massage_label.Text = "Your password is updated successfully.";
+                        form4.Show();
                     }
-                    File.WriteAllLines(filePath, lines);
-                    massage_box_form form1 = new massage_box_form();
-                    form1.Show();
                 }
             }
             else
             {
-                // Save the new user ID and password
-                using (StreamWriter sw = File.AppendText(filePath))
-                {
-                    sw.WriteLine($"{userId},{newPassword}");
-                }
-                massage_box_form form1 = new massage_box_form();
-                form1.Show();
-            }
+                // Show comformation box
+                action_form form5 = new action_form();
+                form5.action_label.Text = "Are you sure you want to save your password?";
+                var result = form5.ShowDialog(); // Show as a dialog and get result
 
+                // User clicked Yes, save the new user ID and password
+                if (result == DialogResult.Yes)
+                {
+                    using (StreamWriter sw = File.AppendText(filePath))
+                    {
+                        sw.WriteLine($"{userId},{newPassword}");
+                    }
+                    massage_box form6 = new massage_box();
+                    form6.massage_label.Text = "Your new password is saved succsessfully.";
+                    form6.Show();
+                }
+            }
 
             // Clear all text boxes
             chngPwUiOpw_txtbx.Clear();
             chngPwUiNpw_txtbx.Clear();
             chngPwUiNpwa_txtbx.Clear();
-
-        }
-
-        private void change_password_form_Load(object sender, EventArgs e)
-        {
 
         }
     }

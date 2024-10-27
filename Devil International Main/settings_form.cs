@@ -49,16 +49,6 @@ namespace Devil_International_Main
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void stngUi_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void stngUiChngPw_btn_Click(object sender, EventArgs e)
         {
             change_password_form form2 = new change_password_form();

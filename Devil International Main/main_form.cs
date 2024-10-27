@@ -15,15 +15,11 @@ namespace Devil_International_Main
         
         private Color originalColor;
 
-        private bool isTabChanging = false;
-
         public main_form_1()
         {
             InitializeComponent();
 
             AttachHoverEventsToButtons();
-
-            AttachTabEventsToButtons();
         }
 
         private void AttachHoverEventsToButtons()
@@ -38,53 +34,16 @@ namespace Devil_International_Main
             }
         }
 
-        private void AttachTabEventsToButtons()
-        {
-            foreach (Control control in this.Controls)
-            {
-                if (control is Button button)
-                {
-                    button.Enter += Button_Enter;
-                    button.Leave += Button_Leave;
-                }
-            }
-        }
-
         private void Button_MouseEnter(object sender, EventArgs e)
         {
-            if (!isTabChanging)
+            if (sender is Button button)
             {
-                if (sender is Button button)
-                {
-                    originalColor = button.BackColor;
-                    button.BackColor = Color.Red; // Change to your desired highlight color
-                }
+                originalColor = button.BackColor;
+                button.BackColor = Color.Red; // Change to your desired highlight color
             }
         }
 
         private void Button_MouseLeave(object sender, EventArgs e)
-        {
-            if (!isTabChanging)
-            {
-                if (sender is Button button)
-                {
-                    button.BackColor = originalColor;
-                }
-            }
-        }
-
-        private void Button_Enter(object sender, EventArgs e)
-        {
-            isTabChanging = true;
-            if (sender is Button button)
-            {
-                originalColor = button.BackColor;
-                button.BackColor = Color.Red; // Change to your desired color for tab change
-            }
-            isTabChanging = false;
-        }
-
-        private void Button_Leave(object sender, EventArgs e)
         {
             if (sender is Button button)
             {

@@ -72,7 +72,6 @@
             this.stngUiCmpnyNme_btn.TabIndex = 0;
             this.stngUiCmpnyNme_btn.Text = "Company Name";
             this.stngUiCmpnyNme_btn.UseVisualStyleBackColor = false;
-            this.stngUiCmpnyNme_btn.Click += new System.EventHandler(this.button2_Click);
             // 
             // stngUiChngPrc_btn
             // 
@@ -115,7 +114,6 @@
             this.Name = "settings_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
-            this.Load += new System.EventHandler(this.stngUi_Load);
             this.ResumeLayout(false);
 
         }

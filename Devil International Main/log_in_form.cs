@@ -17,14 +17,19 @@ namespace Devil_International_Main
         public log_in_form(string selectedItem)
         {
             InitializeComponent();
+
             lgiIfUid_cmbx.SelectedItem = selectedItem;
+        }
+
+        private void log_in_form_Load(object sender, EventArgs e)
+        {
+            lgiIfPw_txtbx.Focus();
+            lgiIfPw_txtbx.Select();
         }
 
         private void lgiIfUid_cmbx_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.lgiIfUid_cmbx.Items.AddRange(new object[] {"Manager"});
-    
-    
         }
 
         private void lgiIfPw_txtbx_TextChanged(object sender, EventArgs e)
@@ -53,7 +58,7 @@ namespace Devil_International_Main
 
             string userId = lgiIfUid_cmbx.Text;
             string password = lgiIfPw_txtbx.Text;
-            string filePath = @"D:\Projects of Visual Studio\Devil International MUI\Save Passward\Save Passward.txt"; // Change to your file path
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Save Passward.txt"); // Change to your file path
 
             // Read the file and check for the user ID and password
             bool loginSuccess = false;
@@ -79,17 +84,10 @@ namespace Devil_International_Main
             }
             else
             {
-                massage_box_form form4 = new massage_box_form();
+                error_massage_box form4 = new error_massage_box();
+                form4.error_massage_label.Text = "Invaild username or password. Please try again.";
                 form4.Show();
             }
-
-
-            
-        }
-
-        private void lgiIf_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

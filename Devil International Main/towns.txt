@@ -1,0 +1,49 @@
+Colombo: Colombo (6.93548, 79.84868)/ Dehiwala (6.8527, 79.8658)/ Ratmalana (6.8211, 79.8851)/ Moratuwa (6.7732, 79.8814)/ Nugegoda (6.8668, 79.9071)/ Maharagama (6.8481, 79.9262)
+
+Gampaha: Gampaha (7.084, 80.009)/ Negombo (7.2095, 79.8385)/ Kelaniya (6.9574, 79.9224)/ Ja-Ela (7.0865, 79.8922)/ Ragama (7.0281, 79.9337)/ Wattala (6.9733, 79.8795)
+
+Kalutara: Kalutara (6.5854, 79.9607)/ Beruwala (6.4788, 79.9823)/ Panadura (6.7135, 79.9071)/ Bandaragama (6.7327, 80.0135)/ Horana (6.7171, 80.0624)/ Matugama (6.5202, 80.1138)
+
+Kandy: Kandy (7.2906, 80.6336)/ Peradeniya (7.2713, 80.5931)/ Katugastota (7.3335, 80.6191)/ Digana (7.2817, 80.7352)/ Gampola (7.1586, 80.5748)/ Nawalapitiya (7.0432, 80.5301)
+
+Matale: Matale (7.4698, 80.6212)/ Dambulla (7.8588, 80.6495)/ Bandarawela (6.8342, 80.9864)/ Sigiriya (7.9570, 80.7603)/ Ukuwela (7.4099, 80.6379)/ Galewela (7.7919, 80.5355)
+
+Nuwara Eliya: Nuwara Eliya (6.9497, 80.7891)/ Hatton (6.893, 80.5976)/ Ambewela (6.8922, 80.8101)/ Kotagala (6.8962, 80.6126)/ Nanu Oya (6.9578, 80.7647)/ Talawakelle (6.9367, 80.6770)
+
+Galle: Galle (6.0461, 80.2103)/ Matara (5.9485, 80.5353)/ Hikkaduwa (6.1401, 80.1046)/ Unawatuna (5.9885, 80.2511)/ Weligama (5.9731, 80.4297)/ Ambalangoda (6.2358, 80.0535)
+
+Matara: Matara (5.9485, 80.5353)/ Weligama (5.9731, 80.4297)/ Mirissa (5.948, 80.4576)/ Tangalle (6.022, 80.7913)/ Dikwella (5.9644, 80.7161)/ Kamburugamuwa (5.9736, 80.4683)
+
+Hambantota: Hambantota (6.1248, 81.1185)/ Tangalle (6.022, 80.7913)/ Tissamaharama (6.274, 81.2841)/ Ambalantota (6.1221, 81.0176)/ Kataragama (6.4142, 81.3324)/ Weeraketiya (6.1619, 80.8867)
+
+Jaffna: Jaffna (9.6685, 80.0074)/ Vaddukoddai (9.7356, 79.9619)/ Chavakachcheri (9.6742, 80.1471)/ Point Pedro (9.8288, 80.2412)/ Kopay (9.7068, 80.0415)/ Nallur (9.6791, 80.0286)
+
+Kilinochchi: Kilinochchi (9.3961, 80.3994)/ Poonakari (9.3636, 80.2254)/ Karachchi (9.4129, 80.397)/ Mulankavil (9.3264, 80.1201)/ Paranthan (9.4021, 80.3849)
+
+Mullaitivu: Mullaitivu (9.2689, 80.8156)/ Oddusuddan (9.2725, 80.6835)/ Pulmoddai (8.9184, 80.9531)/ Puthukkudiyiruppu (9.3134, 80.8217)/ Vishvamadu( 9.3082, 80.6098)
+
+Batticaloa: Batticaloa (7.7102, 81.6924)/ Kattankudy (7.6541, 81.7419)/ Eravur (7.7664, 81.605)/ Valaichenai (7.9209, 81.5676)/ Kaluwanchikudy (7.4135, 81.814)/ Ampara (7.2975, 81.682)
+
+Trincomalee: Trincomalee (8.5778, 81.2289)/ Muttur (8.4509, 81.3377)/ Kinniya (8.4679, 81.1352)/ Mutur (8.4509, 81.3377)/ Nilaveli (8.7483, 81.2428)/ Kuchchaveli (8.8131, 81.2215)
+
+Ampara: Ampara (7.2975, 81.682)/ Pottuvil (6.8786, 81.8352)/ Kalmunai (7.4223, 81.8252)/ Akkaraipattu (7.2224, 81.8578)/ Uhana (7.2572, 81.6786)/ Samanthurai (7.3665, 81.8377)
+
+Monaragala: Monaragala (6.8707, 81.3483)/ Wellawaya (6.7329, 81.1011)/ Siyambalanduwa (6.9897, 81.5455)/ Bibile (7.1411, 81.2249)/ Buttala (6.7575, 81.2403)/ Medagama (7.2493, 81.2001)
+
+Badulla: Badulla (6.9893, 81.0561)/ Hali-Ela (6.9328, 81.0989)/ Passara (7.0412, 81.2391)/ Welimada (6.9041, 80.9496)/ Bandarawela (6.8342, 80.9864)/ Haputale (6.7657, 80.9598)
+
+Ratnapura: Ratnapura (6.6828, 80.3998)/ Kahawatte (6.7386, 80.5325)/ Balangoda (6.6374, 80.7042)/ Embilipitiya (6.3358, 80.8489)/ Pelmadulla (6.5457, 80.4842)/ Kuruwita (6.8167, 80.4226)
+
+Kegalle: Kegalle (7.2543, 80.3453)/ Mawanella (7.2585, 80.4712)/ Galigamuwa (7.216, 80.3017)/ Deraniyagala (6.9068, 80.3037)/ Warakapola (7.2305, 80.199)/ Rambukkana (7.2769, 80.3843)
+
+Puttalam: Puttalam (8.0362, 79.8283)/ Chilaw (7.5758, 79.7954)/ Kalpitiya (8.2432, 79.773)/ Anamaduwa (7.7779, 79.9644)/ Wennappuwa (7.3402, 79.8685)/ Dankotuwa (7.3364, 79.8893)
+
+Kurunegala: Kurunegala (7.4863, 80.3647)/ Kuliyapitiya (7.4701, 80.0422)/ Mawathagama (7.4612, 80.4588)/ Wariyapola (7.5816, 80.264)/ Pannala (7.3364, 80.0566)/ Polgahawela (7.3215, 80.3029)
+
+Anuradhapura: Anuradhapura (8.3122, 80.4131)/ Thirappane (8.3046, 80.4938)/ Kekirawa (8.0413, 80.5687)/ Mihintale (8.3554, 80.5083)/ Eppawala (8.1781, 80.3338)/ Galnewa (8.1289, 80.4078)
+
+Polonnaruwa: Polonnaruwa (7.9392, 81.0027)/ Hingurakgoda (8.0468, 80.8999)/ Medirigiriya (8.2016, 80.9758)/ Thambuttegama (8.2301, 80.2463)/ Welikanda (7.9931, 81.1211)/ Dimbulagala (7.9778, 81.1881)
+
+Vavuniya: Vavuniya (8.7515, 80.4973)/ Vankalai (9.0099, 79.8144)/ Oddusuddan (9.2725, 80.6835)/ Cheddikulam (8.7796, 80.2506)/ Vavuniya South (8.7261, 80.4911)/ Vavuniya North (8.7656, 80.4969)
+
+Mannar: Mannar (8.9814, 79.9042)/ Pesalai (9.0169, 79.9011)/ Talaimannar (9.0814, 79.7382)/ Nedunkerni (9.054, 80.5578)/ Mannar Town (8.9777, 79.912)/ Murunkan (8.901, 80.024)

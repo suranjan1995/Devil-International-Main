@@ -89,7 +89,6 @@
             this.chngPwUiNpw_lbl.Size = new System.Drawing.Size(185, 31);
             this.chngPwUiNpw_lbl.TabIndex = 0;
             this.chngPwUiNpw_lbl.Text = "New Password";
-            this.chngPwUiNpw_lbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // chngPwUiNpwa_lbl
             // 
@@ -102,7 +101,6 @@
             this.chngPwUiNpwa_lbl.Size = new System.Drawing.Size(240, 31);
             this.chngPwUiNpwa_lbl.TabIndex = 0;
             this.chngPwUiNpwa_lbl.Text = "Conform Password";
-            this.chngPwUiNpwa_lbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // chngPwUiUid_cmbx
             // 
@@ -210,7 +208,6 @@
             this.Name = "change_password_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change Passward";
-            this.Load += new System.EventHandler(this.change_password_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
