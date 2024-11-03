@@ -75,6 +75,7 @@
             this.Controls.Add(this.chngPwSveEr1_ui_btn);
             this.Controls.Add(this.error_massage_label);
             this.Controls.Add(this.chngPwSveEr1_ui_pcbx);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "error_massage_box";

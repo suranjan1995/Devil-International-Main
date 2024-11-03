@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +59,12 @@
     </Compile>
     <Compile Include="action_form.Designer.cs">
       <DependentUpon>action_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_product_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_product_form.Designer.cs">
+      <DependentUpon>add_product_form.cs</DependentUpon>
     </Compile>
     <Compile Include="main_form.cs">
       <SubType>Form</SubType>
@@ -82,6 +89,17 @@
     </Compile>
     <Compile Include="main_form_2.Designer.cs">
       <DependentUpon>main_form_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product_category_add_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product_category_add_form.Designer.cs">
+      <DependentUpon>product_category_add_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="settings_form.cs">
       <SubType>Form</SubType>
@@ -112,6 +130,9 @@
     <EmbeddedResource Include="action_form.resx">
       <DependentUpon>action_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="add_product_form.resx">
+      <DependentUpon>add_product_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main_form.en-GB.resx">
       <DependentUpon>main_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +148,9 @@
     <EmbeddedResource Include="main_form_2.resx">
       <DependentUpon>main_form_2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="product_category_add_form.resx">
+      <DependentUpon>product_category_add_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="settings_form.resx">
       <DependentUpon>settings_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,13 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -166,15 +186,20 @@
     <Folder Include="bin\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Customer Details.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Save Passward.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="towns.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Customer Details.txt" />
+    <None Include="Resources\add_icon.jpg" />
+    <None Include="Resources\delete_icon.jpg" />
+    <None Include="Resources\red_line.png" />
+    <None Include="Resources\add_product_wallpaper.jpg" />
+    <Content Include="Product Category.txt" />
+    <None Include="Resources\settings_wall_paper.jpg" />
+    <None Include="Resources\main_form_2_wall_paper.png" />
+    <None Include="Resources\main_form_1_wall_paper.png" />
+    <None Include="Resources\log_in_wall_paper.jpeg" />
+    <None Include="Resources\change_password_wall_paper.jpeg" />
+    <None Include="Resources\add_customer_wallpaper.jpg" />
+    <Content Include="Save Passward.txt" />
+    <Content Include="towns.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

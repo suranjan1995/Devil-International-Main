@@ -158,6 +158,5 @@ namespace Devil_International_Main
             // Show the new form
             form2.Show();
         }
-
     }
 }

@@ -115,8 +115,14 @@ namespace Devil_International_Main
 
         private void addCustomerToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            add_customer_form form2 = new add_customer_form();
-            form2.Show();
+            add_customer_form form3 = new add_customer_form();
+            form3.Show();
+        }
+
+        private void addProductToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            add_product_form form4 = new add_product_form();
+            form4.Show();
         }
     }
 }

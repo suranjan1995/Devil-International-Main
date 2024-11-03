@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Devil_International_Main.Properties.Resources.log_in_wall_paper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(811, 467);
             this.Controls.Add(this.lgiIfLgi_btn);
@@ -148,6 +148,7 @@
             this.Controls.Add(this.lgiIfPw_lbl);
             this.Controls.Add(this.lgiIfUid_lbl);
             this.Controls.Add(this.lgiIfLgi_lbl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "log_in_form";

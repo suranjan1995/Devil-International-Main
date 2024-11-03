@@ -74,6 +74,7 @@
             this.Controls.Add(this.action_label);
             this.Controls.Add(this.action_form_yes_button);
             this.Controls.Add(this.action_form_no_button);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "action_form";

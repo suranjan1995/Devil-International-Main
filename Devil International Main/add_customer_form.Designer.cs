@@ -373,7 +373,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Devil_International_Main.Properties.Resources.add_customer_wallpaper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(705, 632);
             this.Controls.Add(this.customer_location_gmap);
@@ -401,6 +401,7 @@
             this.Controls.Add(this.sales_rep_label);
             this.Controls.Add(this.customer_id_label);
             this.Controls.Add(this.add_customer_here_label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "add_customer_form";
@@ -432,11 +433,11 @@
         private System.Windows.Forms.Label sales_rep_label;
         private System.Windows.Forms.ComboBox sales_rep_combo_box;
         private System.Windows.Forms.ComboBox town_combo_box;
-        private System.Windows.Forms.ComboBox district_combo_box;
         private System.Windows.Forms.Label district_label;
         private System.Windows.Forms.Label town_label;
         private System.Windows.Forms.Label location_label;
         public GMap.NET.WindowsForms.GMapControl customer_location_gmap;
         private System.Windows.Forms.ComboBox customer_name_combo_box;
+        private System.Windows.Forms.ComboBox district_combo_box;
     }
 }

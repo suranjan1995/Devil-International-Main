@@ -549,6 +549,7 @@
             this.addProductToolStripMenuItem1.Name = "addProductToolStripMenuItem1";
             this.addProductToolStripMenuItem1.Size = new System.Drawing.Size(284, 28);
             this.addProductToolStripMenuItem1.Text = "Add Product";
+            this.addProductToolStripMenuItem1.Click += new System.EventHandler(this.addProductToolStripMenuItem1_Click);
             // 
             // addRawMaterialsToolStripMenuItem
             // 
@@ -2481,13 +2482,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Devil_International_Main.Properties.Resources.main_form_2_wall_paper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 737);
             this.Controls.Add(this.muif_2Dt_lbl);
             this.Controls.Add(this.muif_2Tm_lbl);
             this.Controls.Add(this.muif_2stng_btn);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "main_form_2";

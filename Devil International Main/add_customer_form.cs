@@ -337,7 +337,7 @@ namespace Devil_International_Main
 
                     // Show comformation box
                     action_form form3 = new action_form();
-                    form3.action_label.Text = "Are you sure you want to update your password?";
+                    form3.action_label.Text = "Are you sure you want to update customer details?";
                     var result = form3.ShowDialog(); // Show as a dialog and get result
 
                     if (result == DialogResult.Yes)

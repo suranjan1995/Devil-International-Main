@@ -158,6 +158,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = global::Devil_International_Main.Properties.Resources.main_form_1_wall_paper;
             this.Controls.Add(this.muiDopp_btn);
             this.Controls.Add(this.muiDohr_btn);
             this.Controls.Add(this.muiDorad_btn);

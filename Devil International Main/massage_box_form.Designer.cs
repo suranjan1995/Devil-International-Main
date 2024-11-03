@@ -61,6 +61,7 @@
             this.ClientSize = new System.Drawing.Size(565, 184);
             this.Controls.Add(this.chngPwSveMsg_ui_btn);
             this.Controls.Add(this.massage_label);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "massage_box";
