@@ -37,7 +37,7 @@
             this.discount_label = new System.Windows.Forms.Label();
             this.wholesale_price_label = new System.Windows.Forms.Label();
             this.product_id_text_box = new System.Windows.Forms.TextBox();
-            this.customer_name_combo_box = new System.Windows.Forms.ComboBox();
+            this.product_name_combo_box = new System.Windows.Forms.ComboBox();
             this.cost_price_text_box = new System.Windows.Forms.TextBox();
             this.discount_text_box = new System.Windows.Forms.TextBox();
             this.retail_price_text_box = new System.Windows.Forms.TextBox();
@@ -155,16 +155,18 @@
             this.product_id_text_box.Size = new System.Drawing.Size(143, 32);
             this.product_id_text_box.TabIndex = 6;
             // 
-            // customer_name_combo_box
+            // product_name_combo_box
             // 
-            this.customer_name_combo_box.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.customer_name_combo_box.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.customer_name_combo_box.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customer_name_combo_box.FormattingEnabled = true;
-            this.customer_name_combo_box.Location = new System.Drawing.Point(69, 224);
-            this.customer_name_combo_box.Name = "customer_name_combo_box";
-            this.customer_name_combo_box.Size = new System.Drawing.Size(316, 32);
-            this.customer_name_combo_box.TabIndex = 7;
+            this.product_name_combo_box.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.product_name_combo_box.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.product_name_combo_box.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product_name_combo_box.FormattingEnabled = true;
+            this.product_name_combo_box.Location = new System.Drawing.Point(69, 224);
+            this.product_name_combo_box.Name = "product_name_combo_box";
+            this.product_name_combo_box.Size = new System.Drawing.Size(316, 32);
+            this.product_name_combo_box.TabIndex = 7;
+            this.product_name_combo_box.SelectedIndexChanged += new System.EventHandler(this.product_name_combo_box_SelectedIndexChanged);
+            this.product_name_combo_box.Leave += new System.EventHandler(this.ProductNameComboBox_Leave);
             // 
             // cost_price_text_box
             // 
@@ -174,6 +176,7 @@
             this.cost_price_text_box.Size = new System.Drawing.Size(204, 32);
             this.cost_price_text_box.TabIndex = 8;
             this.cost_price_text_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.cost_price_text_box.Leave += new System.EventHandler(this.PriceTextBox_Leave);
             // 
             // discount_text_box
             // 
@@ -183,6 +186,7 @@
             this.discount_text_box.Size = new System.Drawing.Size(204, 32);
             this.discount_text_box.TabIndex = 9;
             this.discount_text_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.discount_text_box.Leave += new System.EventHandler(this.DiscountTextBox_Leave);
             // 
             // retail_price_text_box
             // 
@@ -192,6 +196,7 @@
             this.retail_price_text_box.Size = new System.Drawing.Size(204, 32);
             this.retail_price_text_box.TabIndex = 10;
             this.retail_price_text_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.retail_price_text_box.Leave += new System.EventHandler(this.PriceTextBox_Leave);
             // 
             // wholesale_price_text_box
             // 
@@ -201,6 +206,7 @@
             this.wholesale_price_text_box.Size = new System.Drawing.Size(204, 32);
             this.wholesale_price_text_box.TabIndex = 11;
             this.wholesale_price_text_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.wholesale_price_text_box.Leave += new System.EventHandler(this.PriceTextBox_Leave);
             // 
             // pictureBox1
             // 
@@ -287,58 +293,70 @@
             // 
             // level_1_combo_box
             // 
+            this.level_1_combo_box.AllowDrop = true;
             this.level_1_combo_box.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.level_1_combo_box.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.level_1_combo_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.level_1_combo_box.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.level_1_combo_box.FormattingEnabled = true;
             this.level_1_combo_box.Location = new System.Drawing.Point(548, 189);
             this.level_1_combo_box.Name = "level_1_combo_box";
             this.level_1_combo_box.Size = new System.Drawing.Size(204, 32);
             this.level_1_combo_box.TabIndex = 19;
+            this.level_1_combo_box.SelectedIndexChanged += new System.EventHandler(this.ComboBox_SelectedIndexChanged);
             // 
             // level_2_combo_box
             // 
+            this.level_2_combo_box.AllowDrop = true;
             this.level_2_combo_box.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.level_2_combo_box.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.level_2_combo_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.level_2_combo_box.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.level_2_combo_box.FormattingEnabled = true;
             this.level_2_combo_box.Location = new System.Drawing.Point(548, 239);
             this.level_2_combo_box.Name = "level_2_combo_box";
             this.level_2_combo_box.Size = new System.Drawing.Size(204, 32);
             this.level_2_combo_box.TabIndex = 19;
+            this.level_2_combo_box.SelectedIndexChanged += new System.EventHandler(this.ComboBox_SelectedIndexChanged);
             // 
             // level_3_combo_box
             // 
             this.level_3_combo_box.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.level_3_combo_box.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.level_3_combo_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.level_3_combo_box.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.level_3_combo_box.FormattingEnabled = true;
             this.level_3_combo_box.Location = new System.Drawing.Point(548, 292);
             this.level_3_combo_box.Name = "level_3_combo_box";
             this.level_3_combo_box.Size = new System.Drawing.Size(204, 32);
             this.level_3_combo_box.TabIndex = 19;
+            this.level_3_combo_box.SelectedIndexChanged += new System.EventHandler(this.ComboBox_SelectedIndexChanged);
             // 
             // level_4_combo_box
             // 
             this.level_4_combo_box.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.level_4_combo_box.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.level_4_combo_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.level_4_combo_box.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.level_4_combo_box.FormattingEnabled = true;
             this.level_4_combo_box.Location = new System.Drawing.Point(548, 340);
             this.level_4_combo_box.Name = "level_4_combo_box";
             this.level_4_combo_box.Size = new System.Drawing.Size(204, 32);
             this.level_4_combo_box.TabIndex = 19;
+            this.level_4_combo_box.SelectedIndexChanged += new System.EventHandler(this.ComboBox_SelectedIndexChanged);
             // 
             // level_5_combo_box
             // 
             this.level_5_combo_box.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.level_5_combo_box.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.level_5_combo_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.level_5_combo_box.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.level_5_combo_box.FormattingEnabled = true;
             this.level_5_combo_box.Location = new System.Drawing.Point(548, 388);
             this.level_5_combo_box.Name = "level_5_combo_box";
             this.level_5_combo_box.Size = new System.Drawing.Size(204, 32);
             this.level_5_combo_box.TabIndex = 19;
+            this.level_5_combo_box.SelectedIndexChanged += new System.EventHandler(this.ComboBox_SelectedIndexChanged);
             // 
             // save_button
             // 
@@ -350,6 +368,7 @@
             this.save_button.TabIndex = 20;
             this.save_button.Text = "Save";
             this.save_button.UseVisualStyleBackColor = false;
+            this.save_button.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // Delete_button
             // 
@@ -361,6 +380,7 @@
             this.Delete_button.TabIndex = 21;
             this.Delete_button.Text = "Delete";
             this.Delete_button.UseVisualStyleBackColor = false;
+            this.Delete_button.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // delete_categoyr_button
             // 
@@ -421,7 +441,7 @@
             this.Controls.Add(this.retail_price_text_box);
             this.Controls.Add(this.discount_text_box);
             this.Controls.Add(this.cost_price_text_box);
-            this.Controls.Add(this.customer_name_combo_box);
+            this.Controls.Add(this.product_name_combo_box);
             this.Controls.Add(this.product_id_text_box);
             this.Controls.Add(this.wholesale_price_label);
             this.Controls.Add(this.discount_label);
@@ -452,7 +472,7 @@
         private System.Windows.Forms.Label discount_label;
         private System.Windows.Forms.Label wholesale_price_label;
         private System.Windows.Forms.TextBox product_id_text_box;
-        private System.Windows.Forms.ComboBox customer_name_combo_box;
+        private System.Windows.Forms.ComboBox product_name_combo_box;
         private System.Windows.Forms.TextBox cost_price_text_box;
         private System.Windows.Forms.TextBox discount_text_box;
         private System.Windows.Forms.TextBox retail_price_text_box;
